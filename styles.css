@@ -90,6 +90,14 @@ nav {
   }
 
   .home {
-    padding: 10rem 20vw 10rem 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 5rem 20vw 2rem 10vw;
+  }
+
+  .home * {
+    max-width: 46.25rem;
   }
 }
