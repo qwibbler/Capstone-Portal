@@ -188,7 +188,7 @@ h3 {
     margin-right: 4vw;
   }
   
-  .navbar a {
+  #homelink {
     padding: 0.25rem 1rem;
     margin-left: 2rem;
     color: #ec5242;
@@ -210,6 +210,10 @@ h3 {
   }
 
   /* About */
+.about {
+  padding-top: 8rem;
+}
+
   .about * {
     max-width: 50rem;
   }
