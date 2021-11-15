@@ -34,6 +34,9 @@ nav {
 
 .home {
   padding: 5rem 1rem;
+  background: url(img/back.jpg) center 0 no-repeat, #f7f7f7d2;
+  background-blend-mode: screen;
+  background-size: cover;
 }
 
 .home h2 {
@@ -57,7 +60,7 @@ nav {
 .home p {
   border: 0.125rem solid white;
   padding: 1rem;
-  background-color: #f7f7f7;
+  background-color: #f7f7f75d;
 }
 
 .home h3 {
