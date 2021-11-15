@@ -90,14 +90,43 @@ nav {
     display: flex;
   }
 
-  .navbar {
+  .bothnav {
+    flex-direction: column;
     position: fixed;
-    flex-wrap: wrap;
-    font-size: 1rem;
     top: 0;
     left: 0;
     right: 0;
     width: 100vw;
+    justify-content: space-between;
+  }
+
+  .social {
+    font-size: 0.75rem;
+    background-color: #272a31;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .social ul {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 0 16vw 0 0;
+  }
+
+  .social li {
+    padding: 0.7s5rem;
+    margin-right: 1rem;
+  }
+
+  .social a {
+    color: white;
+  }
+
+  .navbar {
+    font-size: 1rem;
+    flex-wrap: nowrap;
+    align-items: center;
     justify-content: space-between;
     background-color: white;
   }
@@ -109,20 +138,17 @@ nav {
   .navbar ul {
     display: flex;
     align-items: center;
-    margin: 0;
+    margin: 0 10vw 0 0;
   }
   
   .navbar ul li {
     margin-right: 6vw;
   }
-
-  .navbar ul li:last-child {
-    margin-right: 17vw;
-  }
-
+  
   .navbar a {
     padding: 0.25rem 1rem;
     border: 0.25rem solid #ec5242;
+    min-width: 136px;
   }
 
   .home {
