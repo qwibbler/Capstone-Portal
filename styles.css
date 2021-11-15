@@ -47,7 +47,7 @@ nav {
 
 .home {
   padding: 5rem 1rem;
-  min-height: 100vw;
+  overflow-y: visible;
   background: url(img/back.jpg) center 0 no-repeat, #f7f7f7fb;
   background-blend-mode: screen;
   background-size: cover;
@@ -87,7 +87,6 @@ h3 {
   flex-direction: column;
   align-items: center;
   padding: 2rem 1rem;
-  min-height: 100vw;
 }
 
 .about h5 {
@@ -119,10 +118,6 @@ h3 {
   text-decoration: underline;
 }
 
-#desktop_only {
-  display: none;
-}
-
 /*
   *** DESKTOP ***
 */
@@ -136,6 +131,7 @@ h3 {
     display: flex;
   }
 
+  /* Navbars */
   .bothnav {
     flex-direction: column;
     position: fixed;
@@ -161,7 +157,7 @@ h3 {
   }
 
   .social li {
-    padding: 0.7s5rem;
+    padding: 0.75rem;
     margin-right: 1rem;
   }
 
@@ -197,15 +193,37 @@ h3 {
     min-width: 136px;
   }
 
+  /* Home */
   .home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    padding: 5rem 20vw 2rem 10vw;
+    padding: 7.25rem 20vw 4rem 10vw;
   }
 
   .home * {
     max-width: 46.25rem;
+  }
+
+  /* About */
+  .about * {
+    max-width: 50rem;
+  }
+
+  .about hr {
+    content: '';
+    border: 2px solid #ec5242;
+    border-radius: 8px;
+    width: 2rem;
+  }
+
+  .about p {
+    padding: 1rem 3rem;
+  }
+
+  .about .desktop {
+    display: inline;
+    text-decoration: none;
   }
 }
