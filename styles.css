@@ -67,8 +67,8 @@ nav {
 }
 
 h5 {
- color: #ec5242;
- font-size: 2rem;
+  color: #ec5242;
+  font-size: 2rem;
 }
 
 h1 {
@@ -76,9 +76,7 @@ h1 {
   font-size: 4rem;
   font-weight: bold;
   background: url(img/orangefruit-1636991503397-9063.jpg), #ec5242c9;
-  background-clip: text;
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   background-blend-mode: luminosity;
   color: transparent;
 }
@@ -117,7 +115,7 @@ h3 {
 .about p {
   text-align: center;
   background-color: #fff;
-  border: 1px solid #D3D3D3;
+  border: 1px solid #d3d3d3;
   margin: 2rem 0 0 0;
 }
 
@@ -189,22 +187,22 @@ h3 {
     border-radius: 0;
     height: auto;
   }
-  
+
   #logo {
     margin: 0 4vw 0 10vw;
     height: 4rem;
   }
-  
+
   .navbar ul {
     display: flex;
     align-items: center;
     margin: 0 10vw 0 0;
   }
-  
+
   .navbar ul li {
     margin-right: 4vw;
   }
-  
+
   #homelink {
     padding: 0.25rem 1rem;
     margin-left: 2rem;
@@ -226,9 +224,9 @@ h3 {
   }
 
   /* About */
-.about {
-  padding-top: 8rem;
-}
+  .about {
+    padding-top: 8rem;
+  }
 
   .about * {
     max-width: 50rem;

@@ -1,10 +1,10 @@
 const hamburgerIcon = document.querySelector('#hamburger');
 const hamburgerNavBar = document.querySelector('.hamburgerNav');
 const hamburgerNavItems = hamburgerNavBar.querySelectorAll('li');
-const windowSize =  window.matchMedia('(max-width: 768px)');
+const windowSize = window.matchMedia('(max-width: 768px)');
 
 // Navbar closed by default
-let toggler = 'closed'
+let toggler = 'closed';
 
 // Open Navbar
 function openNav() {
@@ -12,9 +12,9 @@ function openNav() {
     hamburgerNavBar.style.width = '150%';
     hamburgerNavBar.style.paddingLeft = '2rem';
     hamburgerIcon.innerHTML = '&#10005;';
-    toggler = 'open'
+    toggler = 'open';
   }
-};
+}
 
 // Close Navbar
 function closeNav() {
@@ -22,23 +22,23 @@ function closeNav() {
     hamburgerNavBar.style.width = '0';
     hamburgerNavBar.style.paddingLeft = '0';
     hamburgerIcon.innerHTML = '&#9776;';
-    toggler = 'closed'
+    toggler = 'closed';
   }
-};
+}
 
 // Toggles Navbar open and shut
 function toggle() {
-  if (toggler == 'closed') {
-    openNav()
+  if (toggler === 'closed') {
+    openNav();
   } else {
-    closeNav()
+    closeNav();
   }
 }
 
 // All buttons that open or shut Navbar
 hamburgerIcon.addEventListener('click', toggle);
-hamburgerNavItems.forEach(item => {
-  item.addEventListener('click', closeNav)
+hamburgerNavItems.forEach((item) => {
+  item.addEventListener('click', closeNav);
 });
 
 // Resets Navbar defaults on window resize
@@ -49,6 +49,6 @@ function resetNavOnDesktop() {
     closeNav();
     hamburgerNavBar.style.width = 'auto';
     hamburgerNavBar.style.paddingLeft = '0';
-   }
+  }
 }
-window.addEventListener('resize', resetNavOnDesktop)
+window.addEventListener('resize', resetNavOnDesktop);
