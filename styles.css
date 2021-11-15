@@ -1,9 +1,10 @@
 * {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-          list-style: none;
-     text-decoration: none;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  list-style: none;
+  text-decoration: none;
 }
 
 html {
@@ -17,3 +18,19 @@ body {
   padding: 0;
 }
 
+nav {
+  position: fixed;
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.desktop {
+  display: none;
+}
+
+.home {
+  padding-top: 5rem;
+  padding-left: 1rem;
+}
