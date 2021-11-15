@@ -18,7 +18,7 @@ body {
   padding: 0;
   color: #ec5242;
   color: #272a31;
-  background-color: #d3d3d3;
+  background-color: #f7f7f7;
 }
 
 nav {
@@ -44,12 +44,20 @@ nav {
   font-family: 'COCOGOOSE', sans-serif;
   font-size: 4rem;
   font-weight: bold;
-  color: #ec5242;
+  /* color: #ec5242; */
+  background: url(img/orangefruit-1636991503397-9063.jpg), #ec5242;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-blend-mode: luminosity;
+  color: transparent;
+  
 }
 
 .home p {
   border: 0.125rem solid white;
   padding: 1rem;
+  background-color: #f7f7f7;
 }
 
 .home h3 {
