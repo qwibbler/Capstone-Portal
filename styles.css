@@ -12,15 +12,17 @@ html {
 }
 
 body {
-  /* font-family: 'COCOGOOSE', sans-serif; */
-  /* font-family: 'Lato', sans-serif; */
+  font-family: 'COCOGOOSE', sans-serif;
+  font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
+  color: #ec5242;
+  color: #272a31;
+  background-color: #d3d3d3;
 }
 
 nav {
   position: fixed;
-  font-family: 'COCOGOOSE', sans-serif;
   font-size: 2rem;
   margin-top: 1rem;
   margin-left: 2rem;
@@ -31,6 +33,26 @@ nav {
 }
 
 .home {
-  padding-top: 5rem;
-  padding-left: 1rem;
+  padding: 5rem 1rem;
 }
+
+.home h2 {
+  color: #ec5242;
+}
+
+.home h1 {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ec5242;
+}
+
+.home p {
+  border: 0.125rem solid white;
+  padding: 1rem;
+}
+
+.home h3 {
+  font-family: 'COCOGOOSE', sans-serif;
+}
+
