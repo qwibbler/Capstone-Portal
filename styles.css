@@ -2,9 +2,6 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-
-  list-style: none;
-  text-decoration: none;
 }
 
 html {
@@ -20,6 +17,20 @@ body {
   color: #272a31;
   background-color: #f7f7f7;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #272a31;
+}
+
+/*
+  Begin
+*/
 
 nav {
   position: fixed;
@@ -79,14 +90,39 @@ nav {
     display: flex;
   }
 
-  nav ul {
+  .navbar {
     position: fixed;
+    flex-wrap: wrap;
+    font-size: 1rem;
     top: 0;
     left: 0;
     right: 0;
     width: 100vw;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: white;
+  }
+  
+  #logo {
+    margin: 0 4vw 0 10vw;
+  }
+  
+  .navbar ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .navbar ul li {
+    margin-right: 6vw;
+  }
+
+  .navbar ul li:last-child {
+    margin-right: 17vw;
+  }
+
+  .navbar a {
+    padding: 0.25rem 1rem;
+    border: 0.25rem solid #ec5242;
   }
 
   .home {
