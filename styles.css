@@ -190,6 +190,8 @@ h3 {
   
   .navbar a {
     padding: 0.25rem 1rem;
+    margin-left: 2rem;
+    color: #ec5242;
     border: 0.25rem solid #ec5242;
     min-width: 136px;
   }
