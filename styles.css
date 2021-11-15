@@ -35,6 +35,9 @@ a {
 nav {
   position: fixed;
   font-size: 2rem;
+}
+
+#hamburger {
   margin-top: 1rem;
   margin-left: 2rem;
 }
@@ -47,6 +50,10 @@ nav {
   display: block;
   overflow: hidden;
   width: 0;
+  height: auto;
+  transition: all ease-in 0.5s;
+  background-color: #d3d3d3dc;
+  border-radius: 0 50% 50% 0;
 }
 
 /* Home */
@@ -179,6 +186,8 @@ h3 {
     justify-content: space-between;
     background-color: white;
     width: 100vw;
+    border-radius: 0;
+    height: auto;
   }
   
   #logo {
