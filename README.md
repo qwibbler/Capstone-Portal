@@ -2,9 +2,10 @@
 
 # Capstone Project - The Portal
 
-> This is a website for a conference
+> This is a demo website for a poetry festival in honor of Pakistan's national poet, a man of deep thought and beautiful verse.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./Screenshot_D1_Desktop.png)
+![screenshot](./Screenshot_D1_Mobile.png)
 
 Additional description about the project and its features.
 
