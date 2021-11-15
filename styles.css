@@ -43,6 +43,8 @@ nav {
   display: none;
 }
 
+/* Home */
+
 .home {
   padding: 5rem 1rem;
   background: url(img/back.jpg) center 0 no-repeat, #f7f7f7fb;
@@ -59,7 +61,7 @@ nav {
   font-size: 4rem;
   font-weight: bold;
   /* color: #ec5242; */
-  background: url(img/orangefruit-1636991503397-9063.jpg), #ec5242;
+  background: url(img/orangefruit-1636991503397-9063.jpg), #ec5242c9;
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -77,6 +79,10 @@ nav {
 .home h3 {
   font-family: 'COCOGOOSE', sans-serif;
 }
+
+/* About */
+
+
 
 /*
   *** DESKTOP ***
