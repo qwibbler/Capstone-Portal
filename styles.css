@@ -43,6 +43,12 @@ nav {
   display: none;
 }
 
+.hamburgerNav {
+  display: block;
+  overflow: hidden;
+  width: 0;
+}
+
 /* Home */
 
 .home {
@@ -166,11 +172,13 @@ h3 {
   }
 
   .navbar {
+    display: flex;
     font-size: 1rem;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
     background-color: white;
+    width: 100vw;
   }
   
   #logo {
