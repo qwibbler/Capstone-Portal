@@ -47,46 +47,86 @@ nav {
 
 .home {
   padding: 5rem 1rem;
+  min-height: 100vw;
   background: url(img/back.jpg) center 0 no-repeat, #f7f7f7fb;
   background-blend-mode: screen;
   background-size: cover;
 }
 
-.home h2 {
-  color: #ec5242;
+h5 {
+ color: #ec5242;
+ font-size: 2rem;
 }
 
-.home h1 {
+h1 {
   font-family: 'COCOGOOSE', sans-serif;
   font-size: 4rem;
   font-weight: bold;
-  /* color: #ec5242; */
   background: url(img/orangefruit-1636991503397-9063.jpg), #ec5242c9;
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-blend-mode: luminosity;
   color: transparent;
-  
 }
 
-.home p {
-  border: 0.125rem solid white;
+p {
+  border: 0.25rem solid white;
   padding: 1rem;
   background-color: #f7f7f75d;
 }
 
-.home h3 {
+h3 {
   font-family: 'COCOGOOSE', sans-serif;
 }
 
 /* About */
 
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  min-height: 100vw;
+}
 
+.about h5 {
+  margin-bottom: 1.5rem;
+}
+
+.about h2 {
+  color: #ec5242;
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about p {
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #D3D3D3;
+  margin: 2rem 0 0 0;
+}
+
+#ps p {
+  margin: 1rem 3rem;
+  border: none;
+  background-color: initial;
+}
+
+#ps a {
+  text-decoration: underline;
+}
+
+#desktop_only {
+  display: none;
+}
 
 /*
   *** DESKTOP ***
 */
+
 @media (min-width: 768px) {
   .mobile {
     display: none;
