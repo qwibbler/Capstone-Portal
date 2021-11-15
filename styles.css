@@ -67,3 +67,29 @@ nav {
   font-family: 'COCOGOOSE', sans-serif;
 }
 
+/*
+  *** DESKTOP ***
+*/
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: flex;
+  }
+
+  nav ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    justify-content: space-around;
+    background-color: white;
+  }
+
+  .home {
+    padding: 10rem 20vw 10rem 10vw;
+  }
+}
