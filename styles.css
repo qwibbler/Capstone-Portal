@@ -76,6 +76,7 @@ nav {
   background-size: 100px, cover, 100px, cover, 150px, 100px;
   background-blend-mode: normal, color, darken, overlay, darken, darken;
   background-repeat: no-repeat;
+  transition: all ease-in 0.5s;
 }
 
 h5 {
@@ -111,6 +112,15 @@ h3 {
   flex-direction: column;
   align-items: center;
   padding: 2rem 1rem;
+  background:
+  url(img/back/orange-blue.png),
+  url(img/back/orange-blue.png) 90% 40%,
+  url(img/back/orange-blue.png) 20% 80%,
+  url(img/back/orange-blue.png) 100% 100%,
+  #f3f3f3;
+  background-size: 50px, 90px, 40px, 100px;
+  background-repeat: no-repeat;
+  transition: all ease-in 0.5s;
 }
 
 .about h5 {
@@ -333,19 +343,21 @@ h3 {
     justify-content: center;
     padding: 12rem 20vw 4rem 10vw;
     background:
-    url(img/back/orange-blue.png) 35% 17%,
-    url(img/back/orange-blue.png) 70% 35%,
-    url(img/back/orange-blue.png) 90% 90%,
-    url(img/back/orange-blue.png) 0% 100%,
-    linear-gradient(white, black) 0 0,
-    url(img/back/leaves.png) 700px 60%,
-    url(img/back/leaf-swirl.png) center 0,
-    url(img/back/ink-books.png) center bottom,
-    url(img/back/tree.jpg) 100% 124px,
+    url(img/back/orange-blue.png),
+    url(img/back/orange-blue.png),
+    url(img/back/orange-blue.png),
+    url(img/back/orange-blue.png),
+    linear-gradient(white, black),
+    url(img/back/leaves.png),
+    url(img/back/leaf-swirl.png),
+    url(img/back/ink-books.png),
+    url(img/back/tree.jpg),
     #f7f7f7fb;
+    background-position: 35% 17%, 70% 35%, 90% 90%, 0% 100%, 0 0, 700px 60%, center 0, center bottom, 100% 124px;
     background-size: 50px, 100px, 200px, 120px, cover, 150px, cover, 300px, 300px;
     background-blend-mode: normal, normal, normal, normal, color, darken, overlay, darken, darken;
     background-repeat: no-repeat;
+    transition: all ease-in 0.5s;
   }
 
   .home * {
@@ -355,6 +367,9 @@ h3 {
   /* About */
   .about {
     padding-top: 8rem;
+    background-size: 200px, 120px, 60px, 150px;
+    background-repeat: no-repeat;
+    transition: all ease-in 0.5s;
   }
 
   .about * {
