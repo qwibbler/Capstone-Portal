@@ -1,10 +1,12 @@
+const windowSize = window.matchMedia('(max-width: 768px)');
 const hamburgerIcon = document.querySelector('#hamburger');
 const hamburgerNavBar = document.querySelector('.hamburgerNav');
 const hamburgerNavItems = hamburgerNavBar.querySelectorAll('li');
-const windowSize = window.matchMedia('(max-width: 768px)');
-
-// Navbar closed by default
-let toggler = 'closed';
+const wrapper = document.querySelector('.allSpeakers')
+let togglerNav = 'closed'; // Navbar closed by default
+const mobileFeatures = 2; // Number of features to show by default
+const moreBtn = document.querySelector('#more')
+let togglerMoreBtn = 'More'; // Less shown by default, button says more
 
 // Open Navbar
 function openNav() {
@@ -12,7 +14,7 @@ function openNav() {
     hamburgerNavBar.style.width = '150%';
     hamburgerNavBar.style.paddingLeft = '2rem';
     hamburgerIcon.innerHTML = '&#10005;';
-    toggler = 'open';
+    togglerNav = 'open';
   }
 }
 
@@ -22,13 +24,13 @@ function closeNav() {
     hamburgerNavBar.style.width = '0';
     hamburgerNavBar.style.paddingLeft = '0';
     hamburgerIcon.innerHTML = '&#9776;';
-    toggler = 'closed';
+    togglerNav = 'closed';
   }
 }
 
 // Toggles Navbar open and shut
 function toggle() {
-  if (toggler === 'closed') {
+  if (togglerNav === 'closed') {
     openNav();
   } else {
     closeNav();
@@ -114,8 +116,6 @@ const speakers = [
   },
 ]
 
-const wrapper = document.querySelector('.allSpeakers')
-
 function makeFeatures(speaker) {
   wrapper.innerHTML += `
   <div class="speaker">
@@ -132,19 +132,9 @@ function makeFeatures(speaker) {
   </div>`;
 }
 
-// How many features to show by default in mobile view
-const mobileFeatures = 2;
-
 function mobileDefaultFeatures() {
   wrapper.innerHTML = '';
   for (let i = 0; i < mobileFeatures; i++) {
-    makeFeatures(speakers[i]);
-  }
-}
-
-// When more is selected, make the rest of the features
-function showMore() {
-  for (let i = mobileFeatures; i < speakers.length; i++) {
     makeFeatures(speakers[i]);
   }
 }
@@ -165,3 +155,25 @@ function generate() {
 }
 window.addEventListener('load', generate);
 window.addEventListener('resize', generate);
+
+// Show More
+
+// When more is selected, make the rest of the features
+function showMore() {
+  for (let i = mobileFeatures; i < speakers.length; i++) {
+    makeFeatures(speakers[i]);
+  }
+}
+
+function toggleMoreLess() {
+  if (togglerMoreBtn === 'More') {
+    showMore();
+    togglerMoreBtn = 'Less'
+    moreBtn.innerHTML = 'Less <span> &#x2303;</span>'
+  } else {
+    mobileDefaultFeatures();
+    togglerMoreBtn = 'More'
+    moreBtn.innerHTML = 'More <span> &#x2304;</span>'
+  }
+}
+moreBtn.addEventListener('click', toggleMoreLess);
