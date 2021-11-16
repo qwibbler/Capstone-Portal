@@ -42,6 +42,10 @@ nav {
   margin-left: 2rem;
 }
 
+#hamburger:hover {
+  cursor: pointer;
+}
+
 .desktop {
   display: none;
 }
@@ -76,6 +80,7 @@ h1 {
   font-size: 4rem;
   font-weight: bold;
   background: url(img/orangefruit-1636991503397-9063.jpg), #ec5242c9;
+  background-clip: text;
   -webkit-background-clip: text;
   background-blend-mode: luminosity;
   color: transparent;

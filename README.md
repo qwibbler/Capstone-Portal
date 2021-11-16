@@ -2,12 +2,10 @@
 
 # Capstone Project - The Portal
 
-> This is a demo website for a poetry festival in honor of Pakistan's national poet, a man of deep thought and beautiful verse.
+> This is a demo website for a poetry festival held in honor of Pakistan's national poet, a man of deep thought and beautiful verse.
 
 ![screenshot](./Screenshot_D1_Desktop.png)
 ![screenshot](./Screenshot_D1_Mobile.png)
-
-Additional description about the project and its features.
 
 ## Built With
 
@@ -17,7 +15,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://qwibbler.github.io/Capstone-Portal/)
 
 
 ## Author
@@ -40,8 +38,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Based on
+- Based on [this template.](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENSE) licensed.
