@@ -199,7 +199,6 @@ h3 {
   gap: 2rem;
   width: 95vw;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, 550px);
   transition: all ease-in 0.5s;
 }
 
@@ -230,6 +229,10 @@ h3 {
   left: 25px;
   width: 150px;
   height: 150px;
+}
+
+.speakerDesc {
+  max-width: 359px;
 }
 
 .speakerName {
@@ -411,4 +414,7 @@ h3 {
   }
 
   /* Featured */
+  .allSpeakers {
+    grid-template-columns: repeat(auto-fit, 550px);
+  }
 }
