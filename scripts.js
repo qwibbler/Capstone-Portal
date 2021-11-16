@@ -122,7 +122,7 @@ function makeFeatures(speaker) {
   wrapper.innerHTML += `
   <div class="speaker">
     <div class="profilePic">
-      <img class="imgBack" src="/img/profiles/checker.png" alt="" class="back">
+      <img class="imgBack" src="/img/profiles/checker.jpg" alt="" class="back">
       <img class="speakerImg" src=${speaker.imgUrl} alt="Speaker Profile Image">
     </div>
     <div class="speakerDesc">
