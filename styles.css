@@ -52,12 +52,26 @@ nav {
 
 .hamburgerNav {
   display: block;
+  box-sizing: content-box;
   overflow: hidden;
   width: 0;
   height: auto;
-  transition: all ease-in 0.5s;
-  background-color: #d3d3d3dc;
+  transition: all ease-in 0.25s;
+  background-color: #ec53424f;
+  border: 0 solid #ec5242;
+  border-left: 0;
+  box-shadow: 0 0 0.5rem #d3d3d3;
   border-radius: 0 50% 50% 0;
+}
+
+#homelink {
+  padding: 0.25rem 0.5rem;
+  color: #ec5242;
+  border: 0.25rem solid #ec5242;
+  border-radius: 0 2rem 2rem 0;
+  text-shadow: 0 0 0.25rem #fff;
+  box-shadow: 0 0 0.25rem #fff;
+  min-width: 136px;
 }
 
 /* Home */
