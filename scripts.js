@@ -7,7 +7,7 @@ let togglerNav = 'closed'; // Navbar closed by default
 const mobileFeatures = 2; // Number of features to show by default
 const moreBtn = document.querySelector('#more')
 let togglerMoreBtn = 'More'; // Less shown by default, button says more
-const offset = 8;
+const offset = 100;
 
 // Open Navbar
 function openNav() {

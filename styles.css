@@ -318,6 +318,11 @@ h3 {
     margin-right: 1rem;
   }
 
+  .fa {
+    color: #fff;
+    background-color: transparent;
+  }
+
   .social a {
     color: white;
   }
@@ -364,7 +369,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     padding: 12rem 20vw 4rem 10vw;
-    background-position: 35% 17%, 70% 35%, 90% 90%, 0% 100%, 0 0, 700px 60%, center 0, center bottom, 100% 124px;
+    background-position: 35% 17%, 70% 35%, 90% 90%, 0% 100%, 0 0, 700px 70%, center 0, center bottom, 100% 4rem;
     background-size: 50px, 100px, 200px, 120px, cover, 150px, cover, 300px, 300px;
     transition: all ease-in 0.5s;
   }
