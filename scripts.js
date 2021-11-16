@@ -7,6 +7,7 @@ let togglerNav = 'closed'; // Navbar closed by default
 const mobileFeatures = 2; // Number of features to show by default
 const moreBtn = document.querySelector('#more')
 let togglerMoreBtn = 'More'; // Less shown by default, button says more
+const offset = 8;
 
 // Open Navbar
 function openNav() {
@@ -56,6 +57,33 @@ function resetNavOnDesktop() {
   }
 }
 window.addEventListener('resize', resetNavOnDesktop);
+
+// Try for scrollspy
+// const links = document.getElementsByClassName('navLink');
+// const about = document.getElementById('aboutpage');
+const links = document.getElementsByClassName('navLink');
+
+function makeActive() {
+  if (about.getBoundingClientRect().top <= offset) {
+  }
+}
+
+// console.log(links[0])
+
+function scrollspy() {
+  for (let i = 0; i < links.length; i++) {
+    const currentLink = links[i];
+    const page = document.getElementById(currentLink.classList[1]);
+    console.log(currentLink.classList[1])
+    if (page.getBoundingClientRect().top <= offset) {
+      for (let j = 0; j < links.length; j++) {
+        links[j].classList.remove('active');
+      }
+      currentLink.classList.add('active');
+    };
+  }
+}
+window.addEventListener('scroll', scrollspy)
 
 // Create Featured Speakers
 

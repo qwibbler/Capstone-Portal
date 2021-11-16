@@ -74,6 +74,10 @@ nav {
   min-width: 136px;
 }
 
+.active {
+  color: #ec5242;
+}
+
 /* Home */
 
 .home {
