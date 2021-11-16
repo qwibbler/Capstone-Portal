@@ -1,4 +1,4 @@
-const { title } = require("process");
+// const { title, features } = require("process");
 
 const hamburgerIcon = document.querySelector('#hamburger');
 const hamburgerNavBar = document.querySelector('.hamburgerNav');
@@ -57,8 +57,8 @@ window.addEventListener('resize', resetNavOnDesktop);
 
 // Create Featured Speakers
 
-const speakersInfo = {
-  aadil: {
+const speakers = [
+  {
     imgUrl: '/img/profiles/6.jpg',
     fullName: 'Aadil Rasheed',
     title: `baaqī hai ab bhī tark-e-tamannā kī aarzū<br>
@@ -66,12 +66,10 @@ const speakersInfo = {
     sample: `He is an important name  in children's 
     literature in Urdu. He has published more than two dozen books of 
     short stories and poetry and received many awards from different 
-    Urdu academies of India. He has written on a wide range of topics in a simple 
-    and captivating way. In poetry he used different genres, and experimented with 
-    writing Ribiyaat and Na'at for children.`,
+    Urdu academies of India.`,
   },
-  hameed: {
-    imgUrl: '/img/profiles/5.png',
+  {
+    imgUrl: '/img/profiles/5.jpg',
     fullName: 'Abdul Hameed',
     title: '25 Aug 1928 | Amritsar, Punjab',
     sample: `Hameed’s first story entitled “Manzil Manzil” 
@@ -80,7 +78,7 @@ const speakersInfo = {
     found their appeal with the readers. They were marked by the
     nostalgic fervor and romantic nostalgia they evoked.`,
   },
-  charagh: {
+  {
     imgUrl: '/img/profiles/4.jpg',
     fullName: 'Charagh Barelvi',
     title: ' 05 Sep 1988 | Bareilly, Uttar pradesh',
@@ -88,7 +86,7 @@ const speakersInfo = {
     poetry and other literature since his childhood. His love for poetry 
     and his intense passion for urdu brought him to urdu poetry.`,
   },
-  aadil1: {
+  {
     imgUrl: '/img/profiles/3.jpg',
     fullName: 'Aadil Rasheed',
     title: `baaqī hai ab bhī tark-e-tamannā kī aarzū<br>
@@ -96,11 +94,9 @@ const speakersInfo = {
     sample: `He is an important name  in children's 
     literature in Urdu. He has published more than two dozen books of 
     short stories and poetry and received many awards from different 
-    Urdu academies of India. He has written on a wide range of topics in a simple 
-    and captivating way. In poetry he used different genres, and experimented with 
-    writing Ribiyaat and Na'at for children.`,
+    Urdu academies of India.`,
   },
-  hameed1: {
+  {
     imgUrl: '/img/profiles/2.jpg',
     fullName: 'Abdul Hameed',
     title: '25 Aug 1928 | Amritsar, Punjab',
@@ -110,7 +106,7 @@ const speakersInfo = {
     found their appeal with the readers. They were marked by the
     nostalgic fervor and romantic nostalgia they evoked.`,
   },
-  charagh1: {
+  {
     imgUrl: '/img/profiles/1.jpg',
     fullName: 'Charagh Barelvi',
     title: ' 05 Sep 1988 | Bareilly, Uttar pradesh',
@@ -118,4 +114,56 @@ const speakersInfo = {
     poetry and other literature since his childhood. His love for poetry 
     and his intense passion for urdu brought him to urdu poetry.`,
   },
+]
+
+const wrapper = document.querySelector('.allSpeakers')
+
+function makeFeatures(speaker) {
+  wrapper.innerHTML += `
+  <div class="speaker">
+    <div class="profilePic">
+      <img class="imgBack" src="/img/profiles/checker.png" alt="" class="back">
+      <img class="speakerImg" src=${speaker.imgUrl} alt="Speaker Profile Image">
+    </div>
+    <div class="speakerDesc">
+      <h3 class="speakerName">${speaker.fullName}</h3>
+      <h4 class="speakerTitle">${speaker.title}</h4>
+      <hr class="smallDivider">
+      <p class="speakerSample">${speaker.sample}</p>
+    </div>
+  </div>`;
 }
+
+// How many features to show by default in mobile view
+const mobileFeatures = 2;
+
+function mobileDefaultFeatures() {
+  wrapper.innerHTML = '';
+  for (let i = 0; i < mobileFeatures; i++) {
+    makeFeatures(speakers[i]);
+  }
+}
+
+// When more is selected, make the rest of the features
+function showMore() {
+  for (let i = mobileFeatures; i < speakers.length; i++) {
+    makeFeatures(speakers[i]);
+  }
+}
+
+function showAll() {
+  wrapper.innerHTML = '';
+  speakers.forEach(speaker => {
+    makeFeatures(speaker);
+  });
+}
+
+function generate() {
+  if (windowSize.matches) {
+    mobileDefaultFeatures()
+  } else {
+    showAll()
+  }
+}
+window.addEventListener('load', generate);
+window.addEventListener('resize', generate);
