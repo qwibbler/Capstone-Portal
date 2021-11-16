@@ -180,12 +180,14 @@ h3 {
 
 .imgBack {
   position: relative;
+  z-index: -1;
   width: 100px;
   height: 100px;
 }
 
 .speakerImg {
   position: absolute;
+  z-index: -1;
   top: 25px;
   left: 25px;
   width: 150px;
@@ -210,6 +212,7 @@ h3 {
   border: 1px solid #272a31;
   border-radius: 8px;
   margin: 0.5rem 0 0.75rem 0;
+  z-index: -1;
 }
 
 .speakerSample {
@@ -341,7 +344,8 @@ h3 {
     border: 2px solid #ec5242;
     border-radius: 8px;
     width: 2rem;
-  }
+    z-index: -1;
+}
 
   .about p {
     padding: 1rem 3rem;
