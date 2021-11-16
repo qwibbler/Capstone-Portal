@@ -79,7 +79,7 @@ window.addEventListener('scroll', scrollspy);
 
 const speakers = [
   {
-    imgUrl: '/img/profiles/6.jpg',
+    imgUrl: './img/profiles/6.jpg',
     fullName: 'Aadil Rasheed',
     title: `baaqī hai ab bhī tark-e-tamannā kī aarzū<br>
     kyūñkar kahūñ ki koī tamannā nahīñ mujhe`,
@@ -89,7 +89,7 @@ const speakers = [
     Urdu academies of India.`,
   },
   {
-    imgUrl: '/img/profiles/2.jpg',
+    imgUrl: './img/profiles/2.jpg',
     fullName: 'Abdul Hameed',
     title: '25 Aug 1928 | Amritsar, Punjab',
     sample: `Hameed’s first story entitled “Manzil Manzil” 
@@ -99,7 +99,7 @@ const speakers = [
     nostalgic fervor and romantic nostalgia they evoked.`,
   },
   {
-    imgUrl: '/img/profiles/7.jpg',
+    imgUrl: './img/profiles/7.jpg',
     fullName: 'Charagh Barelvi',
     title: ' 05 Sep 1988 | Bareilly, Uttar pradesh',
     sample: `Born in a Hindi spoken Brahmin family, he was very close to 
@@ -107,7 +107,7 @@ const speakers = [
     and his intense passion for urdu brought him to urdu poetry.`,
   },
   {
-    imgUrl: '/img/profiles/9.jpg',
+    imgUrl: './img/profiles/9.jpg',
     fullName: 'Aadil Rasheed',
     title: `baaqī hai ab bhī tark-e-tamannā kī aarzū<br>
     kyūñkar kahūñ ki koī tamannā nahīñ mujhe`,
@@ -117,7 +117,7 @@ const speakers = [
     Urdu academies of India.`,
   },
   {
-    imgUrl: '/img/profiles/10.jpg',
+    imgUrl: './img/profiles/10.jpg',
     fullName: 'Abdul Hameed',
     title: '25 Aug 1928 | Amritsar, Punjab',
     sample: `Hameed’s first story entitled “Manzil Manzil” 
@@ -127,7 +127,7 @@ const speakers = [
     nostalgic fervor and romantic nostalgia they evoked.`,
   },
   {
-    imgUrl: '/img/profiles/11.jpg',
+    imgUrl: './img/profiles/11.jpg',
     fullName: 'Charagh Barelvi',
     title: ' 05 Sep 1988 | Bareilly, Uttar pradesh',
     sample: `Born in a Hindi spoken Brahmin family, he was very close to 
@@ -140,7 +140,7 @@ function makeFeatures(speaker) {
   wrapper.innerHTML += `
   <div class="speaker">
     <div class="profilePic">
-      <img class="imgBack" src="/img/profiles/checker.jpg" alt="" class="back">
+      <img class="imgBack" src="./img/profiles/checker.jpg" alt="" class="back">
       <img class="speakerImg" src=${speaker.imgUrl} alt="Speaker Profile Image">
     </div>
     <div class="speakerDesc">
