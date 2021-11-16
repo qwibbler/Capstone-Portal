@@ -57,25 +57,22 @@ nav {
   width: 0;
   height: auto;
   transition: all ease-in 0.25s;
-  background-color: #ec53424f;
-  border: 0 solid #ec5242;
-  border-left: 0;
-  box-shadow: 0 0 0.5rem #d3d3d3;
+  background-color: #ec5342;
+  box-shadow: 0 0 0.5rem #272a31;
   border-radius: 0 50% 50% 0;
 }
 
 #homelink {
-  padding: 0.25rem 0.5rem;
-  color: #ec5242;
-  border: 0.25rem solid #ec5242;
+  padding: 0 0.5rem;
+  color: #272a31;
+  border: 0.25rem solid #272a31;
   border-radius: 0 2rem 2rem 0;
   text-shadow: 0 0 0.25rem #fff;
   box-shadow: 0 0 0.25rem #fff;
-  min-width: 136px;
 }
 
 .active {
-  color: #ec5242;
+  color: #fff;
 }
 
 /* Home */
@@ -134,11 +131,11 @@ h3 {
   align-items: center;
   padding: 2rem 1rem;
   background:
-    url(img/back/orange-blue.png),
-    url(img/back/orange-blue.png) 90% 40%,
-    url(img/back/orange-blue.png) 20% 80%,
-    url(img/back/orange-blue.png) 100% 100%,
-    #f3f3f3;
+  url(img/back/orange-blue.png),
+  url(img/back/orange-blue.png) 90% 40%,
+  url(img/back/orange-blue.png) 20% 80%,
+  url(img/back/orange-blue.png) 100% 100%,
+  #f3f3f3;
   background-size: 50px, 90px, 40px, 100px;
   background-repeat: no-repeat;
   transition: all ease-in 0.5s;
@@ -265,7 +262,7 @@ h3 {
   padding: 0.5rem 0;
   width: 100%;
   background-color: transparent;
-  font-size: 1rem;
+  font-size: 1rem
 }
 
 .featured span {
@@ -362,6 +359,11 @@ h3 {
     min-width: 136px;
   }
 
+  
+  .active {
+    color: #ec5242;
+  }
+
   /* Home */
   .home {
     display: flex;
@@ -395,7 +397,7 @@ h3 {
     border-radius: 8px;
     width: 2rem;
     z-index: -1;
-  }
+}
 
   .about p {
     padding: 1rem 3rem;

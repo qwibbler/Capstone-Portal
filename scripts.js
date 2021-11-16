@@ -14,7 +14,6 @@ function openNav() {
   if (windowSize.matches) {
     hamburgerNavBar.style.width = '150%';
     hamburgerNavBar.style.paddingLeft = '2rem';
-    hamburgerNavBar.style.borderWidth = '0.5rem';
     hamburgerIcon.innerHTML = '&#10005;';
     togglerNav = 'open';
   }
@@ -26,7 +25,6 @@ function closeNav() {
     hamburgerNavBar.style.width = '0';
     hamburgerNavBar.style.paddingLeft = '0';
     hamburgerIcon.innerHTML = '&#9776;';
-    hamburgerNavBar.style.borderWidth = '0';
     togglerNav = 'closed';
   }
 }
