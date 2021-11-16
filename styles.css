@@ -65,9 +65,17 @@ nav {
 .home {
   padding: 5rem 1rem;
   overflow-y: visible;
-  background: url(img/back.jpg) center 0 no-repeat, #f7f7f7fb;
-  background-blend-mode: screen;
-  background-size: cover;
+  background:
+  url(img/back/orange-blue.png) 90% 35%,
+  linear-gradient(white, black) 0 0,
+  url(img/back/leaves.png) 100% 60%,
+  url(img/back/leaf-swirl.png) center 0,
+  url(img/back/ink-books.png) center bottom,
+  url(img/back/tree.jpg) top right,
+  #f7f7f7fb;
+  background-size: 100px, cover, 100px, cover, 150px, 100px;
+  background-blend-mode: normal, color, darken, overlay, darken, darken;
+  background-repeat: no-repeat;
 }
 
 h5 {
@@ -89,7 +97,7 @@ h1 {
 p {
   border: 0.25rem solid white;
   padding: 1rem;
-  background-color: #f7f7f75d;
+  background-color: #f7f7f7;
 }
 
 h3 {
@@ -324,6 +332,20 @@ h3 {
     flex-direction: column;
     justify-content: center;
     padding: 12rem 20vw 4rem 10vw;
+    background:
+    url(img/back/orange-blue.png) 35% 17%,
+    url(img/back/orange-blue.png) 70% 35%,
+    url(img/back/orange-blue.png) 90% 90%,
+    url(img/back/orange-blue.png) 0% 100%,
+    linear-gradient(white, black) 0 0,
+    url(img/back/leaves.png) 700px 60%,
+    url(img/back/leaf-swirl.png) center 0,
+    url(img/back/ink-books.png) center bottom,
+    url(img/back/tree.jpg) 100% 124px,
+    #f7f7f7fb;
+    background-size: 50px, 100px, 200px, 120px, cover, 150px, cover, 300px, 300px;
+    background-blend-mode: normal, normal, normal, normal, color, darken, overlay, darken, darken;
+    background-repeat: no-repeat;
   }
 
   .home * {
