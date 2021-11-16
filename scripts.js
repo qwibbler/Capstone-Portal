@@ -2,10 +2,10 @@ const windowSize = window.matchMedia('(max-width: 768px)');
 const hamburgerIcon = document.querySelector('#hamburger');
 const hamburgerNavBar = document.querySelector('.hamburgerNav');
 const hamburgerNavItems = hamburgerNavBar.querySelectorAll('li');
-const wrapper = document.querySelector('.allSpeakers')
+const wrapper = document.querySelector('.allSpeakers');
 let togglerNav = 'closed'; // Navbar closed by default
 const mobileFeatures = 2; // Number of features to show by default
-const moreBtn = document.querySelector('#more')
+const moreBtn = document.querySelector('#more');
 let togglerMoreBtn = 'More'; // Less shown by default, button says more
 const offset = 100;
 
@@ -59,31 +59,21 @@ function resetNavOnDesktop() {
 window.addEventListener('resize', resetNavOnDesktop);
 
 // Try for scrollspy
-// const links = document.getElementsByClassName('navLink');
-// const about = document.getElementById('aboutpage');
 const links = document.getElementsByClassName('navLink');
 
-function makeActive() {
-  if (about.getBoundingClientRect().top <= offset) {
-  }
-}
-
-// console.log(links[0])
-
 function scrollspy() {
-  for (let i = 0; i < links.length; i++) {
+  for (let i = 0; i < links.length; i += 1) {
     const currentLink = links[i];
     const page = document.getElementById(currentLink.classList[1]);
-    console.log(currentLink.classList[1])
     if (page.getBoundingClientRect().top <= offset) {
-      for (let j = 0; j < links.length; j++) {
+      for (let j = 0; j < links.length; j += 1) {
         links[j].classList.remove('active');
       }
       currentLink.classList.add('active');
-    };
+    }
   }
 }
-window.addEventListener('scroll', scrollspy)
+window.addEventListener('scroll', scrollspy);
 
 // Create Featured Speakers
 
@@ -144,7 +134,7 @@ const speakers = [
     poetry and other literature since his childhood. His love for poetry 
     and his intense passion for urdu brought him to urdu poetry.`,
   },
-]
+];
 
 function makeFeatures(speaker) {
   wrapper.innerHTML += `
@@ -164,23 +154,23 @@ function makeFeatures(speaker) {
 
 function mobileDefaultFeatures() {
   wrapper.innerHTML = '';
-  for (let i = 0; i < mobileFeatures; i++) {
+  for (let i = 0; i < mobileFeatures; i += 1) {
     makeFeatures(speakers[i]);
   }
 }
 
 function showAll() {
   wrapper.innerHTML = '';
-  speakers.forEach(speaker => {
+  speakers.forEach((speaker) => {
     makeFeatures(speaker);
   });
 }
 
 function generate() {
   if (windowSize.matches) {
-    mobileDefaultFeatures()
+    mobileDefaultFeatures();
   } else {
-    showAll()
+    showAll();
   }
 }
 window.addEventListener('load', generate);
@@ -190,7 +180,7 @@ window.addEventListener('resize', generate);
 
 // When more is selected, make the rest of the features
 function showMore() {
-  for (let i = mobileFeatures; i < speakers.length; i++) {
+  for (let i = mobileFeatures; i < speakers.length; i += 1) {
     makeFeatures(speakers[i]);
   }
 }
@@ -198,12 +188,12 @@ function showMore() {
 function toggleMoreLess() {
   if (togglerMoreBtn === 'More') {
     showMore();
-    togglerMoreBtn = 'Less'
-    moreBtn.innerHTML = 'Less <span> &#x2303;</span>'
+    togglerMoreBtn = 'Less';
+    moreBtn.innerHTML = 'Less <span> &#x2303;</span>';
   } else {
     mobileDefaultFeatures();
-    togglerMoreBtn = 'More'
-    moreBtn.innerHTML = 'More <span> &#x2304;</span>'
+    togglerMoreBtn = 'More';
+    moreBtn.innerHTML = 'More <span> &#x2304;</span>';
   }
 }
 moreBtn.addEventListener('click', toggleMoreLess);

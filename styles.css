@@ -84,16 +84,16 @@ nav {
   padding: 5rem 1rem;
   overflow-y: visible;
   background:
-  url(img/back/orange-blue.png),
-  url(img/back/orange-blue.png),
-  url(img/back/orange-blue.png),
-  url(img/back/orange-blue.png),
-  linear-gradient(white, black),
-  url(img/back/leaves.png),
-  url(img/back/leaf-swirl.png),
-  url(img/back/ink-books.png),
-  url(img/back/tree.jpg),
-  #f7f7f7fb;
+    url(img/back/orange-blue.png),
+    url(img/back/orange-blue.png),
+    url(img/back/orange-blue.png),
+    url(img/back/orange-blue.png),
+    linear-gradient(white, black),
+    url(img/back/leaves.png),
+    url(img/back/leaf-swirl.png),
+    url(img/back/ink-books.png),
+    url(img/back/tree.jpg),
+    #f7f7f7fb;
   background-position: 35% 17%, 90% 35%, 90% 90%, 0% 100%, 0 0, 100% 60%, center 0, center bottom, top right;
   background-size: 0, 100px, 0, 0, cover, 100px, cover, 150px, 100px;
   background-blend-mode: normal, normal, normal, normal, color, darken, overlay, darken, darken;
@@ -111,7 +111,6 @@ h1 {
   font-size: 4rem;
   font-weight: bold;
   background: url(img/orangefruit-1636991503397-9063.jpg), #ec5242c9;
-  background-clip: text;
   -webkit-background-clip: text;
   background-blend-mode: luminosity;
   color: transparent;
@@ -135,11 +134,11 @@ h3 {
   align-items: center;
   padding: 2rem 1rem;
   background:
-  url(img/back/orange-blue.png),
-  url(img/back/orange-blue.png) 90% 40%,
-  url(img/back/orange-blue.png) 20% 80%,
-  url(img/back/orange-blue.png) 100% 100%,
-  #f3f3f3;
+    url(img/back/orange-blue.png),
+    url(img/back/orange-blue.png) 90% 40%,
+    url(img/back/orange-blue.png) 20% 80%,
+    url(img/back/orange-blue.png) 100% 100%,
+    #f3f3f3;
   background-size: 50px, 90px, 40px, 100px;
   background-repeat: no-repeat;
   transition: all ease-in 0.5s;
@@ -266,7 +265,7 @@ h3 {
   padding: 0.5rem 0;
   width: 100%;
   background-color: transparent;
-  font-size: 1rem
+  font-size: 1rem;
 }
 
 .featured span {
@@ -396,7 +395,7 @@ h3 {
     border-radius: 8px;
     width: 2rem;
     z-index: -1;
-}
+  }
 
   .about p {
     padding: 1rem 3rem;
