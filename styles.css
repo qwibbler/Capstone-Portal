@@ -278,6 +278,31 @@ h3 {
   color: #ec5242;
 }
 
+/* Footer */
+
+footer {
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .logo {
+  height: 4rem;
+  margin: 2rem;
+}
+
+footer .textblock {
+  margin: 2rem;
+}
+
+footer p {
+  background: transparent;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
 /*
   *** DESKTOP ***
 */
@@ -343,7 +368,7 @@ h3 {
     z-index: 10;
   }
 
-  #logo {
+  .logo {
     margin: 0 4vw 0 10vw;
     height: 4rem;
   }
@@ -419,5 +444,25 @@ h3 {
   /* Featured */
   .allSpeakers {
     grid-template-columns: repeat(auto-fit, 550px);
+  }
+
+  /* Footer */
+  footer {
+    background-color: #272a31;
+  }
+
+  footer .logo {
+    margin: 4rem 1rem 4rem 12rem;
+    filter: invert(1);
+    mix-blend-mode: lighten;
+  }
+
+  #oneline {
+    display: flex;
+  }
+
+  footer p {
+    color: #d3d3d3;
+    border: none;
   }
 }

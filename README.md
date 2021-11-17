@@ -4,7 +4,10 @@
 
 > This is a demo website for a poetry festival held in honor of Pakistan's national poet, a man of deep thought and beautiful verse.
 
-![screenshot](./Screenshot_D1_Desktop.png)
+# Screenshots
+## Desktop
+### Header
+![screenshot](../img/screenshots/desktop-header.png)
 ![screenshot](./Screenshot_D1_Mobile.png)
 
 ## Built With
