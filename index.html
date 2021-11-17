@@ -35,7 +35,7 @@
                   <option value="farsi">Farsi</option>
                 </select>
               </a></li>
-            <li><a href="#" class="login">Login / Sign up</a></li>
+            <li><a href="#" class="loginBtn">Login / Sign up</a></li>
           </ul>
         </div>
         <div class="navbar hamburgerNav">
@@ -47,7 +47,7 @@
             <li><a class="" href="#">Sponsor</a></li>
             <li><a class="" href="#">News</a></li>
             <li class="mobile empty">_empty_</li>
-            <li class="mobile"><a href="" class="login">Log in/Sign up</a></li>
+            <li class="mobile"><a href="" class="loginBtn">Log in/Sign up</a></li>
             <li class="mobile empty">_empty_</li>
             <li><a id="homelink" href="#homepage">Iqbal Day</a></li>
             <li class="mobile empty">_empty_</li>
@@ -113,19 +113,35 @@
       <button type="button" class="mobile" id="more">MORE <span> &#x2304;</span></button>
     </section>
 
-    <section class="form">
-      <form action="action_page.php" method="post">
+    <section class="formpage">
+      <div class="formbg"></div>
+      <div class="formWrap">
         <img src="./img/logo.png" alt="logo">
-        <div class="formInputs">
-          <label for="uname"><b>Full Name</b></label>
-          <input type="text" placeholder="Full Name" name="uname" required>
-
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-
+        <form class="signupForm" action="action_page.php" method="post">
+          <div class="formIn">
+            <label for="uname"><b>Full Name</b></label>
+            <input type="text" placeholder="Full Name" name="uname" required>
+          </div>
+          <div class="formIn">
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+          </div>
           <button type="submit">Sign up!</button>
-        </div>
-      </form>
+          <p>Click <a class="formSwitch" href="#">here</a> to sign up.</p>
+        </form>
+        <form class="loginForm" action="action_page.php" method="post">
+          <div class="formIn">
+            <label for="uname"><b>UserName</b></label>
+            <input type="text" placeholder="Full Name" name="uname" required>
+          </div>
+          <div class="formIn">
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+          </div>
+          <button type="submit">Log in</button>
+          <p>Click <a class="formSwitch" href="#">here</a> to sign up.</p>
+        </form>
+      </div>
     </section>
   </main>
 

@@ -200,18 +200,39 @@ function toggleMoreLess() {
 moreBtn.addEventListener('click', toggleMoreLess);
 
 // Login/Sign up Form
-const form = document.querySelector('form')
-function signUp() {
-  form.innerHTML = `
-  <img src="./img/logo.png" alt="logo">
-  <div class="formInputs">
-    <label for="uname"><b>Full Name</b></label>
-    <input type="text" placeholder="Full Name" name="uname" required>
+const form = document.querySelector('.formpage');
+const formBg = document.querySelector('.formbg');
+const signup = document.querySelector('.signupForm');
+const login = document.querySelector('.loginForm');
+const formWrap = document.querySelector('.formWrap');
+const loginBtn = document.querySelectorAll('.loginBtn');
+const formSwitch = document.querySelectorAll('.formSwitch');
+let formToggler = 'none'; // Form off by default
+let defaultForm = signup; // Default Shows signup form
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+function toggleForm() {
+  if (formToggler === 'none') {
+    form.style.display = 'flex';
+    defaultForm.style.display = 'flex';
+    formToggler = 'show';
+  } else {
+    form.style.display = 'none';
+    defaultForm.style.display = 'none';
+    formToggler = 'none';
+  }
+}
 
-    <button type="submit">Sign up!</button>
-  </div>
-  `
+for (let i = 0; i < loginBtn.length; i++) {
+  loginBtn[i].addEventListener('click', toggleForm);
+}
+formBg.addEventListener('click', toggleForm);
+
+function switchForms() {
+  toggleForm()
+  defaultForm = (defaultForm === signup) ? login : signup;
+  toggleForm()
+}
+
+for (let i = 0; i < formSwitch.length; i++) {
+  formSwitch[i].addEventListener('click', switchForms);
 }
