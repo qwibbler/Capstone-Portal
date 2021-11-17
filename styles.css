@@ -132,6 +132,47 @@ h3 {
   font-family: 'COCOGOOSE', sans-serif;
 }
 
+/* Program */
+.program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(./img/back/blue-back.jpg), #d3d3d328;
+  background-blend-mode: screen;
+}
+
+h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.programcards {
+  display: grid;
+  align-items: center;
+  gap: 1px
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  align-items: center;
+  margin: 0.5rem;
+  background-color: #d3d3d391;
+}
+
+.card h5 {
+  font-size: 1rem;
+}
+
+.card p {
+  font-size: 0.5rem;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
 /* Featured */
 
 .featured {
@@ -142,9 +183,7 @@ h3 {
 }
 
 .featured h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
+  color: #272a31;
 }
 
 .featured hr {
@@ -286,7 +325,7 @@ h3 {
   align-items: center;
 }
 
-.formWrap h2 {
+.formWrap h3 {
   margin: 0 0 1rem 0;
 }
 
