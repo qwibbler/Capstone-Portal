@@ -22,7 +22,6 @@ const formSwitch = document.querySelectorAll('.formSwitch');
 let formToggler = 'none'; // Form off by default
 let defaultForm = signup; // Default Shows signup form
 
-
 // Open Navbar
 function openNav() {
   if (windowSize.matches) {
