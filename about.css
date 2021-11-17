@@ -1,0 +1,79 @@
+
+/* About */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  background:
+    url(img/back/orange-blue.png),
+    url(img/back/orange-blue.png) 90% 40%,
+    url(img/back/orange-blue.png) 20% 80%,
+    url(img/back/orange-blue.png) 100% 100%,
+    #f3f3f3;
+  background-size: 50px, 90px, 40px, 100px;
+  background-repeat: no-repeat;
+  transition: all ease-in 0.5s;
+}
+
+.about h5 {
+  margin-bottom: 1.5rem;
+}
+
+.about h2 {
+  color: #ec5242;
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about p {
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  margin: 2rem 0 0 0;
+}
+
+.ps p {
+  margin: 1rem 3rem;
+  border: none;
+  background-color: initial;
+}
+
+.ps a {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+
+  /* About */
+  .about {
+    padding-top: 8rem;
+    background-size: 200px, 120px, 60px, 150px;
+    background-repeat: no-repeat;
+    transition: all ease-in 0.5s;
+  }
+
+  .about * {
+    max-width: 50rem;
+  }
+
+  .about hr {
+    content: '';
+    border: 2px solid #ec5242;
+    border-radius: 8px;
+    width: 2rem;
+    z-index: -1;
+  }
+
+  .about p {
+    padding: 1rem 3rem;
+  }
+
+  .about .desktop {
+    display: inline;
+    text-decoration: none;
+  }
+}
