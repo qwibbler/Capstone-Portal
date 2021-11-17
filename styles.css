@@ -78,6 +78,11 @@ nav {
   color: #fff;
 }
 
+.empty {
+  color: transparent;
+  font-size: 0.5rem;
+}
+
 /* Home */
 
 .home {
