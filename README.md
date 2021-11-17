@@ -42,7 +42,7 @@
 ## Live Demo
 
 [Live Demo](https://qwibbler.github.io/Capstone-Portal/)
-[Loom Video](https://qwibbler.github.io/Capstone-Portal/)
+[Loom Video](https://www.loom.com/share/ee565db93f1347c0a63a2a4c6b47f3fc)
 
 
 ## Author
@@ -65,7 +65,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Adapted from [this template](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015), used under the [Creative Commons License](https://creativecommons.org/licenses/by-nc/4.0/).
+- Adapted from [this template by Cindy Shin in Behance.](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015), used under the [Creative Commons License](https://creativecommons.org/licenses/by-nc/4.0/).
 
 ## 📝 License
 
