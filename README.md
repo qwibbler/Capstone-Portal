@@ -6,9 +6,30 @@
 
 # Screenshots
 ## Desktop
+<!-- ![screenshot](../img/screenshots/Screenshot_D1_Mobile.png) -->
 ### Header
 ![screenshot](../img/screenshots/desktop-header.png)
-![screenshot](./Screenshot_D1_Mobile.png)
+### Home Page
+![screenshot](../img/screenshots/desktop-header.png)
+### About Page
+![screenshot](../img/screenshots/desktop-header.png)
+### Featured Speakers
+![screenshot](../img/screenshots/desktop-header.png)
+### Footer
+![screenshot](../img/screenshots/desktop-footer.png)
+
+## Mobile
+<!-- ![screenshot](../img/screenshots/Screenshot_D1_Mobile.png) -->
+### Header
+![screenshot](../img/screenshots/desktop-header.png)
+### Home Page
+![screenshot](../img/screenshots/desktop-header.png)
+### About Page
+![screenshot](../img/screenshots/desktop-header.png)
+### Featured Speakers
+![screenshot](../img/screenshots/desktop-header.png)
+### Footer
+![screenshot](../img/screenshots/desktop-footer.png)
 
 ## Built With
 
