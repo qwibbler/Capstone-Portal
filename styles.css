@@ -330,6 +330,7 @@ h3 {
 .signupForm {
   display: none;
   flex-direction: column;
+  align-items: center;
 }
 
 .formIn {
@@ -337,6 +338,7 @@ h3 {
 }
 
 .formWrap button {
+  padding: 0.25rem 0.5rem;
   background-color: #ec5242;
   border-color: #ec5242;
 }
@@ -352,8 +354,6 @@ h3 {
   text-decoration: underline;
   color: #ec5242;
 }
-
-
 
 /* Footer */
 

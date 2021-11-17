@@ -117,25 +117,27 @@
       <div class="formWrap">
         <img src="./img/logo.png" alt="logo">
         <form class="signupForm" action="action_page.php" method="post">
+          <h2>Sign Up</h2>
           <div class="formIn">
             <label for="uname"><b>Full Name</b></label>
-            <input type="text" placeholder="Full Name" name="uname" required>
+            <input type="text" placeholder="Full Name" name="uname" id="uname" required>
           </div>
           <div class="formIn">
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
           </div>
-          <button type="submit">Sign up!</button>
-          <p>Click <a class="formSwitch" href="#">here</a> to sign up.</p>
+          <button type="submit">Sign up</button>
+          <p>Click <a class="formSwitch" href="#">here</a> to log in.</p>
         </form>
         <form class="loginForm" action="action_page.php" method="post">
+          <h2>Log in</h2>
           <div class="formIn">
             <label for="uname"><b>UserName</b></label>
-            <input type="text" placeholder="User Name" name="uname" required>
+            <input type="text" placeholder="User Name" name="uname" id="uname" required>
           </div>
           <div class="formIn">
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
           </div>
           <button type="submit">Log in</button>
           <p>Click <a class="formSwitch" href="#">here</a> to sign up.</p>
