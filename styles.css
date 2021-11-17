@@ -296,6 +296,7 @@ h3 {
   left: 0;
   right: 0;
   bottom: 0;
+
 }
 
 .formbg {
@@ -306,6 +307,7 @@ h3 {
   right: 0;
   bottom: 0;
   background-color: #ec52423f;
+  transition: all ease-in 5s;
 }
 
 .formWrap {
@@ -314,14 +316,14 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #d6aeae;
   padding: 2rem;
   border-radius: 1rem;
   border: 0.25rem solid #ec5242;
 }
 
-.form img {
-  mix-blend-mode: darken;
+.formWrap img {
+  mix-blend-mode: color-burn;
   margin: 0 0 1rem 0;
 }
 
