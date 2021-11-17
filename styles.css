@@ -58,7 +58,9 @@ nav {
   width: 0;
   height: auto;
   transition: all ease-in 0.25s;
-  background-color: #ec5342;
+  background: url(img/back/leaf-swirl.png), #ec5342;
+  background-blend-mode: overlay;
+  background-size: cover;
   box-shadow: 0 0 0.5rem #272a31;
   border-radius: 0 50% 50% 0;
 }
