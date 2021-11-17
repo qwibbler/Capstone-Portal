@@ -6,30 +6,30 @@
 
 # Screenshots
 ## Desktop
-<!-- ![screenshot](../img/screenshots/Screenshot_D1_Mobile.png) -->
+<!-- ![screenshot](./img/screenshots/Screenshot_D1_Mobile.png) -->
 ### Header
-![screenshot](../img/screenshots/desktop-header.png)
+![screenshot](./img/screenshots/desktop-header.png)
 ### Home Page
-![screenshot](../img/screenshots/desktop-header.png)
+![screenshot](./img/screenshots/desktop-home.png)
 ### About Page
-![screenshot](../img/screenshots/desktop-header.png)
+![screenshot](./img/screenshots/desktop-about.png)
 ### Featured Speakers
-![screenshot](../img/screenshots/desktop-header.png)
+![screenshot](./img/screenshots/desktop-featured.png)
 ### Footer
-![screenshot](../img/screenshots/desktop-footer.png)
+![screenshot](./img/screenshots/desktop-footer.png)
 
 ## Mobile
-<!-- ![screenshot](../img/screenshots/Screenshot_D1_Mobile.png) -->
-### Header
-![screenshot](../img/screenshots/desktop-header.png)
+<!-- ![screenshot](./img/screenshots/Screenshot_D1_Mobile.png) -->
 ### Home Page
-![screenshot](../img/screenshots/desktop-header.png)
+![screenshot](./img/screenshots/mobile-home.png)
 ### About Page
-![screenshot](../img/screenshots/desktop-header.png)
+![screenshot](./img/screenshots/mobile-about.png)
 ### Featured Speakers
-![screenshot](../img/screenshots/desktop-header.png)
+![screenshot](./img/screenshots/mobile-featured.png)
+### Hamburger Menu
+![screenshot](./img/screenshots/mobile-hamburger.png)
 ### Footer
-![screenshot](../img/screenshots/desktop-footer.png)
+![screenshot](./img/screenshots/mobile-footer.png)
 
 ## Built With
 
