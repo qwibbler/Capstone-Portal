@@ -28,7 +28,13 @@
           <ul>
             <li><a href="#" class="fa fa-facebook"></a></li>
             <li><a href="#" class="fa fa-twitter"></a></li>
-            <li><a href="#" class="language">English</a></li>
+            <li><a href="#" class="language">
+                <select name="" id="lang">
+                  <option value="eng" selected>English</option>
+                  <option value="urdu">Urdu</option>
+                  <option value="farsi">Farsi</option>
+                </select>
+              </a></li>
             <li><a href="#" class="login">Login / Sign up</a></li>
           </ul>
         </div>
@@ -40,11 +46,11 @@
             <li><a class="navLink featuredpage" href="#featuredpage">Join</a></li>
             <li><a class="" href="#">Sponsor</a></li>
             <li><a class="" href="#">News</a></li>
-            <li class="mobile empty">Q</li>
+            <li class="mobile empty">_empty_</li>
             <li class="mobile"><a href="" class="login">Log in/Sign up</a></li>
-            <li class="mobile empty">Q</li>
+            <li class="mobile empty">_empty_</li>
             <li><a id="homelink" href="#homepage">Iqbal Day</a></li>
-            <li class="mobile empty">Q</li>
+            <li class="mobile empty">_empty_</li>
           </ul>
         </div>
       </div>
@@ -73,9 +79,9 @@
         follow in his footsteps.<br>This year, we have invited the foremost poets
         of this age, who are presenting their own modern interperations of his age-old,
         yet ageless verses, in light of current events.<span class="desktop"><br>
-        Besides poetry recitals, we also intend to have a section on the philosophical and contextual
-        meaning of a selection of Allama Muhammad Iqbal's poetry himself.<br>
-        Everyone interested should feel free to apply for a spot on our programme.</span>
+          Besides poetry recitals, we also intend to have a section on the philosophical and contextual
+          meaning of a selection of Allama Muhammad Iqbal's poetry himself.<br>
+          Everyone interested should feel free to apply for a spot on our programme.</span>
       </p>
       <div id="ps">
         <p>Please contact us via email for any further questions about Iqbal Day
@@ -106,6 +112,21 @@
       </div>
       <button type="button" class="mobile" id="more">MORE <span> &#x2304;</span></button>
     </section>
+
+    <section class="form">
+      <form action="action_page.php" method="post">
+        <img src="./img/logo.png" alt="logo">
+        <div class="formInputs">
+          <label for="uname"><b>Full Name</b></label>
+          <input type="text" placeholder="Full Name" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit">Sign up!</button>
+        </div>
+      </form>
+    </section>
   </main>
 
   <footer>
@@ -115,9 +136,10 @@
         <p>2021 Iqbal Day Poetry Festival.</p>
         <p>Some Rights Reserved.</p>
       </div>
-      <p class="desktop">Celeberating Pakistan's National Poet - November 9th - Allama Iqbal University, Lahore, Punjab</p>
+      <p class="desktop">Celeberating Pakistan's National Poet - November 9th - Allama Iqbal University, Lahore, Punjab
+      </p>
       <p class="desktop">Licensed under Pakistan's National Department of Culture and Art.
-        </p>
+      </p>
     </div>
   </footer>
 

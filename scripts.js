@@ -1,13 +1,17 @@
+// Navbar Variables
 const windowSize = window.matchMedia('(max-width: 768px)');
 const hamburgerIcon = document.querySelector('#hamburger');
 const hamburgerNavBar = document.querySelector('.hamburgerNav');
 const hamburgerNavItems = hamburgerNavBar.querySelectorAll('li');
 const wrapper = document.querySelector('.allSpeakers');
 let togglerNav = 'closed'; // Navbar closed by default
+// Scrollspy Variables
+const offset = 100;
+const links = document.getElementsByClassName('navLink');
+// Feature Page Variables
 const mobileFeatures = 2; // Number of features to show by default
 const moreBtn = document.querySelector('#more');
 let togglerMoreBtn = 'More'; // Less shown by default, button says more
-const offset = 100;
 
 // Open Navbar
 function openNav() {
@@ -57,7 +61,6 @@ function resetNavOnDesktop() {
 window.addEventListener('resize', resetNavOnDesktop);
 
 // Try for scrollspy
-const links = document.getElementsByClassName('navLink');
 
 function scrollspy() {
   for (let i = 0; i < links.length; i += 1) {
@@ -195,3 +198,20 @@ function toggleMoreLess() {
   }
 }
 moreBtn.addEventListener('click', toggleMoreLess);
+
+// Login/Sign up Form
+const form = document.querySelector('form')
+function signUp() {
+  form.innerHTML = `
+  <img src="./img/logo.png" alt="logo">
+  <div class="formInputs">
+    <label for="uname"><b>Full Name</b></label>
+    <input type="text" placeholder="Full Name" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Sign up!</button>
+  </div>
+  `
+}

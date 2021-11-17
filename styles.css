@@ -283,6 +283,8 @@ h3 {
   color: #ec5242;
 }
 
+/* Form */
+
 /* Footer */
 
 footer {
@@ -349,6 +351,16 @@ footer p {
   .social li {
     padding: 0.75rem;
     margin-right: 1rem;
+  }
+
+  .social select {
+    background-color: transparent;
+    color: white;
+    border: none;
+  }
+
+  .social option {
+    color: #272a31;
   }
 
   .fa {
