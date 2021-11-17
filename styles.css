@@ -315,14 +315,14 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #d6aeae;
+  background-color: #fff;
   padding: 2rem;
   border-radius: 1rem;
   border: 0.25rem solid #ec5242;
 }
 
 .formWrap img {
-  mix-blend-mode: color-burn;
+  mix-blend-mode: darken;
   margin: 0 0 1rem 0;
 }
 
@@ -333,8 +333,12 @@ h3 {
   align-items: center;
 }
 
+.formWrap h2 {
+  margin: 0 0 1rem 0;
+}
+
 .formIn {
-  margin: 1rem;
+  margin: 0 0 1rem 0;
 }
 
 .formWrap button {
