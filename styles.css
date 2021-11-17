@@ -169,13 +169,13 @@ h3 {
   margin: 2rem 0 0 0;
 }
 
-#ps p {
+.ps p {
   margin: 1rem 3rem;
   border: none;
   background-color: initial;
 }
 
-#ps a {
+.ps a {
   text-decoration: underline;
 }
 
@@ -296,7 +296,6 @@ h3 {
   left: 0;
   right: 0;
   bottom: 0;
-
 }
 
 .formbg {
@@ -552,7 +551,7 @@ footer .textblock {
     display: flex;
   }
 
-  footer p {
+  .footer p {
     color: #d3d3d3;
     border: none;
   }
