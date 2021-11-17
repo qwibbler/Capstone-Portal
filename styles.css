@@ -132,11 +132,11 @@ h3 {
   align-items: center;
   padding: 2rem 1rem;
   background:
-  url(img/back/orange-blue.png),
-  url(img/back/orange-blue.png) 90% 40%,
-  url(img/back/orange-blue.png) 20% 80%,
-  url(img/back/orange-blue.png) 100% 100%,
-  #f3f3f3;
+    url(img/back/orange-blue.png),
+    url(img/back/orange-blue.png) 90% 40%,
+    url(img/back/orange-blue.png) 20% 80%,
+    url(img/back/orange-blue.png) 100% 100%,
+    #f3f3f3;
   background-size: 50px, 90px, 40px, 100px;
   background-repeat: no-repeat;
   transition: all ease-in 0.5s;
@@ -361,6 +361,7 @@ h3 {
     margin-left: 2rem;
     color: #ec5242;
     border: 0.25rem solid #ec5242;
+    border-radius: 0;
     min-width: 136px;
   }
 
