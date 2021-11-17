@@ -275,7 +275,7 @@ h3 {
   padding: 0.5rem 0;
   width: 100%;
   background-color: transparent;
-  font-size: 1rem
+  font-size: 1rem;
 }
 
 .featured span {
@@ -310,7 +310,11 @@ h3 {
 
 .formWrap {
   z-index: 12;
-  background-color:#d6b5b5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
   padding: 2rem;
   border-radius: 1rem;
   border: 0.25rem solid #ec5242;
@@ -331,19 +335,19 @@ h3 {
   margin: 1rem;
 }
 
-form button {
+.formWrap button {
   background-color: #ec5242;
   border-color: #ec5242;
 }
 
-form p {
+.formWrap p {
   background-color: transparent;
   border: none;
   padding: 0;
   margin: 0;
 }
 
-form a {
+.formWrap a {
   text-decoration: underline;
   color: #ec5242;
 }
@@ -352,7 +356,7 @@ form a {
 
 /* Footer */
 
-footer {
+.footer {
   display: flex;
   background-color: #fff;
   align-items: center;
@@ -368,7 +372,7 @@ footer .textblock {
   margin: 2rem;
 }
 
-footer p {
+.footer p {
   background: transparent;
   margin-top: 0;
   margin-bottom: 0;
@@ -478,7 +482,7 @@ footer p {
     min-width: 136px;
   }
 
-  
+
   .active {
     color: #ec5242;
   }
@@ -516,7 +520,7 @@ footer p {
     border-radius: 8px;
     width: 2rem;
     z-index: -1;
-}
+  }
 
   .about p {
     padding: 1rem 3rem;

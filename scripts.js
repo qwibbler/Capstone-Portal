@@ -12,6 +12,16 @@ const links = document.getElementsByClassName('navLink');
 const mobileFeatures = 2; // Number of features to show by default
 const moreBtn = document.querySelector('#more');
 let togglerMoreBtn = 'More'; // Less shown by default, button says more
+// Sign Form Variables
+const form = document.querySelector('.formpage');
+const formBg = document.querySelector('.formbg');
+const signup = document.querySelector('.signupForm');
+const login = document.querySelector('.loginForm');
+const loginBtn = document.querySelectorAll('.loginBtn');
+const formSwitch = document.querySelectorAll('.formSwitch');
+let formToggler = 'none'; // Form off by default
+let defaultForm = signup; // Default Shows signup form
+
 
 // Open Navbar
 function openNav() {
@@ -200,19 +210,9 @@ function toggleMoreLess() {
 moreBtn.addEventListener('click', toggleMoreLess);
 
 // Login/Sign up Form
-const form = document.querySelector('.formpage');
-const formBg = document.querySelector('.formbg');
-const signup = document.querySelector('.signupForm');
-const login = document.querySelector('.loginForm');
-const formWrap = document.querySelector('.formWrap');
-const loginBtn = document.querySelectorAll('.loginBtn');
-const formSwitch = document.querySelectorAll('.formSwitch');
-let formToggler = 'none'; // Form off by default
-let defaultForm = signup; // Default Shows signup form
 
 function toggleForm() {
   if (formToggler === 'none') {
-    console.log('Show')
     form.style.display = 'flex';
     defaultForm.style.display = 'flex';
     formToggler = 'show';
@@ -220,22 +220,20 @@ function toggleForm() {
     form.style.display = 'none';
     defaultForm.style.display = 'none';
     formToggler = 'none';
-    console.log('Hide')
   }
 }
 
-for (let i = 0; i < loginBtn.length; i++) {
+for (let i = 0; i < loginBtn.length; i += 1) {
   loginBtn[i].addEventListener('click', toggleForm);
-  console.log(loginBtn[i])
 }
 formBg.addEventListener('click', toggleForm);
 
 function switchForms() {
-  toggleForm()
+  toggleForm();
   defaultForm = (defaultForm === signup) ? login : signup;
-  toggleForm()
+  toggleForm();
 }
 
-for (let i = 0; i < formSwitch.length; i++) {
+for (let i = 0; i < formSwitch.length; i += 1) {
   formSwitch[i].addEventListener('click', switchForms);
 }
