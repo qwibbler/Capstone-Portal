@@ -212,6 +212,7 @@ let defaultForm = signup; // Default Shows signup form
 
 function toggleForm() {
   if (formToggler === 'none') {
+    console.log('Show')
     form.style.display = 'flex';
     defaultForm.style.display = 'flex';
     formToggler = 'show';
@@ -219,11 +220,13 @@ function toggleForm() {
     form.style.display = 'none';
     defaultForm.style.display = 'none';
     formToggler = 'none';
+    console.log('Hide')
   }
 }
 
 for (let i = 0; i < loginBtn.length; i++) {
   loginBtn[i].addEventListener('click', toggleForm);
+  console.log(loginBtn[i])
 }
 formBg.addEventListener('click', toggleForm);
 
