@@ -137,8 +137,8 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url(./img/back/blue-back.jpg), #d3d3d328;
-  background-blend-mode: screen;
+  background: url(./img/back/blue-back.jpg);
+  background-size: cover;
 }
 
 h2 {
@@ -149,28 +149,42 @@ h2 {
 }
 
 .programcards {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1px
+  padding: 1rem;
 }
 
 .card {
   display: grid;
-  grid-template-columns: 1fr 2fr 3fr;
+  width: 100%;
+  grid-template-columns: 4rem 8rem auto;
   align-items: center;
+  justify-content: flex-start;
   margin: 0.5rem;
-  background-color: #d3d3d391;
+  background-color: #d3d3d356;
+}
+
+.card img {
+  max-height: 3rem;
+  max-width: 3rem;
+  margin: auto;
+  /* filter: invert(1); */
+  /* mix-blend-mode: darken; */
 }
 
 .card h5 {
   font-size: 1rem;
+  /* font-weight: ; */
+  font-family: 'COCOGOOSE', sans-serif;
 }
 
 .card p {
-  font-size: 0.5rem;
+  font-size: 0.75rem;
   padding: 0;
   background-color: transparent;
   border: none;
+  color: #d3d3d3;
 }
 
 /* Featured */
@@ -496,6 +510,20 @@ footer .textblock {
 
   .home * {
     max-width: 46.25rem;
+  }
+
+  /* Program */
+  .program {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .programcards {
+    grid-template: 1f / 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .card {
+    grid-template: auto / 4rem 2rem auto;
   }
 
   /* Featured */
