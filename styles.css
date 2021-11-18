@@ -67,7 +67,8 @@ nav {
 }
 
 #homelink {
-  padding: 0 0.5rem;
+  display: inline-block;
+  text-align: center;
   color: #272a31;
   border: 0.25rem solid #272a31;
   border-radius: 0 2rem 2rem 0;
@@ -180,7 +181,7 @@ h2 {
 }
 
 .card p {
-  font-size: 0.75rem;
+  font-size: 1rem;
   padding: 0;
   background-color: transparent;
   border: none;
@@ -521,12 +522,24 @@ footer .textblock {
   }
 
   .programcards {
-    grid-template: 1f / 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template: auto / repeat(auto-fit, 10rem);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
   }
 
   .card {
-    grid-template: auto / 4rem 2rem auto;
+    grid-template: 4rem 2rem auto / auto;
+    justify-content: center;
+    height: 100%;
+    padding: 0.5rem;
   }
+
+  .card h5 { text-align: center; }
+
+  .card p { text-align: center; }
 
   /* Featured */
   .allSpeakers {
