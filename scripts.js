@@ -6,7 +6,7 @@ const hamburgerNavItems = hamburgerNavBar.querySelectorAll('li');
 const wrapper = document.querySelector('.allSpeakers');
 let togglerNav = 'closed'; // Navbar closed by default
 // Scrollspy Variables
-const offset = 100;
+const offset = 200;
 const links = document.getElementsByClassName('navLink');
 // Feature Page Variables
 const mobileFeatures = 2; // Number of features to show by default
