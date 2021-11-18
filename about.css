@@ -1,6 +1,11 @@
+p {
+  margin: 1rem 3rem;
+  border: none;
+  background-color: initial;
+  text-align: center;
+}
 
 /* About */
-
 .about {
   display: flex;
   flex-direction: column;
@@ -18,15 +23,16 @@
 }
 
 .about h5 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-.about h2 {
+.about h1 {
   color: #ec5242;
   font-family: 'COCOGOOSE', sans-serif;
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
+  margin-top: 0;
 }
 
 .about p {
@@ -46,6 +52,40 @@
   text-decoration: underline;
 }
 
+/* Logopage */
+.logopage {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+h2 {
+  color: #272a31;
+}
+
+hr {
+  content: '';
+  border: 2px solid #ec5242;
+  background-color: #ec5242;
+  border-radius: 8px;
+  width: 2rem;
+  z-index: -1;
+}
+
+.logopage img {
+  box-shadow: 0 0 0.25rem #d3d3d3;
+  width: 21rem;
+  padding: 1rem;
+  margin: 2rem auto 3rem auto;
+}
+
+/* Footer */
+.footer p {
+  text-align: left;
+}
+
 @media (min-width: 768px) {
 
   /* About */
@@ -58,14 +98,6 @@
 
   .about * {
     max-width: 50rem;
-  }
-
-  .about hr {
-    content: '';
-    border: 2px solid #ec5242;
-    border-radius: 8px;
-    width: 2rem;
-    z-index: -1;
   }
 
   .about p {

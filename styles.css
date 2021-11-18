@@ -204,6 +204,7 @@ h2 {
   content: '';
   width: 4rem;
   border: 2px solid #ec5242;
+  background-color: #ec5242;
   border-radius: 8px;
   margin: 0 0 2rem 0;
 }
@@ -265,6 +266,7 @@ h2 {
   content: '';
   width: 1rem;
   border: 1px solid #272a31;
+  background-color: #272a31;
   border-radius: 8px;
   margin: 0.5rem 0 0.75rem 0;
   z-index: -1;
