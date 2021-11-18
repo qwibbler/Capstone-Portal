@@ -56,6 +56,7 @@ p {
 .logopage {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #fff;
   border-top: 1px solid #d3d3d3;
   border-bottom: 1px solid #d3d3d3;
@@ -81,11 +82,25 @@ hr {
   margin: 2rem auto 3rem auto;
 }
 
+.logopage p {
+  text-align: center;
+  max-width: 42rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 /* History */
+.history {
+  background-color: #fff;
+  height: 100%;
+  padding: 2rem 1rem;
+}
+
 .imgblock {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 .imgcard {
@@ -95,8 +110,9 @@ hr {
 }
 
 .imgblock img {
-  width: 20rem;
+  width: 22rem;
   opacity: 0.4;
+  filter: grayscale();
 }
 
 .imgtext {
@@ -146,5 +162,24 @@ hr {
     text-decoration: none;
   }
 
+  /* Logopage */
+  .logopage p {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
   /* History */
+  .imgblock {
+    margin-bottom: 5rem;
+  }
+
+  /* Footer */
+  #oneline * {
+    margin: 0;
+    margin-right: 0.25rem;
+  }
+
+  #oneline {
+    margin-left: 3rem;
+  }
 }

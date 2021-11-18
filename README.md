@@ -11,10 +11,16 @@
 ![screenshot](./img/screenshots/desktop-header.png)
 ### Home Page
 ![screenshot](./img/screenshots/desktop-home.png)
-### About Page
-![screenshot](./img/screenshots/desktop-about.png)
+### Program
+![screenshot](./img/screenshots/desktop-program.png)
 ### Featured Speakers
 ![screenshot](./img/screenshots/desktop-featured.png)
+### About Page
+![screenshot](./img/screenshots/desktop-about.png)
+### Logo Page
+![screenshot](./img/screenshots/desktop-logopg.png)
+### History of the Festival
+![screenshot](./img/screenshots/desktop-history.png)
 ### Footer
 ![screenshot](./img/screenshots/desktop-footer.png)
 
@@ -22,10 +28,16 @@
 <!-- ![screenshot](./img/screenshots/Screenshot_D1_Mobile.png) -->
 ### Home Page
 ![screenshot](./img/screenshots/mobile-home.png)
-### About Page
-![screenshot](./img/screenshots/mobile-about.png)
+### Program
+![screenshot](./img/screenshots/mobile-program.png)
 ### Featured Speakers
 ![screenshot](./img/screenshots/mobile-featured.png)
+### About Page
+![screenshot](./img/screenshots/mobile-about.png)
+### Logo Page
+![screenshot](./img/screenshots/mobile-logopg.png)
+### History of the Festival
+![screenshot](./img/screenshots/mobile-history.png)
 ### Hamburger Menu
 ![screenshot](./img/screenshots/mobile-hamburger.png)
 ### Login / Sign up Form
