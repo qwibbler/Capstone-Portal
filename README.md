@@ -53,8 +53,9 @@
 
 ## Live Demo
 
-[Live Demo](https://qwibbler.github.io/Capstone-Portal/)
-[Loom Video](https://www.loom.com/share/ee565db93f1347c0a63a2a4c6b47f3fc)
+- [Live Demo](https://qwibbler.github.io/Capstone-Portal/)
+- [Video v.1](https://www.loom.com/share/ee565db93f1347c0a63a2a4c6b47f3fc)
+- [Video v.2](https://www.loom.com/share/51d70e362e3b452d8143d0e0d47f7c6e)
 
 
 ## Author
