@@ -3,12 +3,12 @@ const windowSize = window.matchMedia('(max-width: 768px)');
 const hamburgerIcon = document.querySelector('#hamburger');
 const hamburgerNavBar = document.querySelector('.hamburgerNav');
 const hamburgerNavItems = hamburgerNavBar.querySelectorAll('li');
-const wrapper = document.querySelector('.allSpeakers');
 let togglerNav = 'closed'; // Navbar closed by default
 // Scrollspy Variables
 const offset = 200;
 const links = document.getElementsByClassName('navLink');
 // Feature Page Variables
+const wrapper = document.querySelector('.allSpeakers');
 const mobileFeatures = 2; // Number of features to show by default
 const moreBtn = document.querySelector('#more');
 let togglerMoreBtn = 'More'; // Less shown by default, button says more

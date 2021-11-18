@@ -3,7 +3,6 @@ const windowSize = window.matchMedia('(max-width: 768px)');
 const hamburgerIcon = document.querySelector('#hamburger');
 const hamburgerNavBar = document.querySelector('.hamburgerNav');
 const hamburgerNavItems = hamburgerNavBar.querySelectorAll('li');
-const wrapper = document.querySelector('.allSpeakers');
 let togglerNav = 'closed'; // Navbar closed by default
 // Sign Form Variables
 const form = document.querySelector('.formpage');

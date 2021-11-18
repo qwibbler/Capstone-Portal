@@ -182,12 +182,11 @@ h2 {
   max-height: 3rem;
   max-width: 3rem;
   margin: auto;
-  /* filter: invert(1); */
-  /* mix-blend-mode: darken; */
 }
 
 .card h5 {
   font-size: 1rem;
+
   /* font-weight: ; */
   font-family: 'COCOGOOSE', sans-serif;
   text-shadow: 0 0 1px black;
@@ -551,6 +550,7 @@ footer .textblock {
     grid-template: 4rem 2rem auto / auto;
     justify-content: center;
     height: 100%;
+
     /* padding: 0.5rem; */
   }
 
