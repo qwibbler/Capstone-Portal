@@ -81,6 +81,42 @@ hr {
   margin: 2rem auto 3rem auto;
 }
 
+/* History */
+.imgblock {
+  display: flex;
+  justify-content: center;
+}
+
+.imgcard {
+  position: relative;
+  margin: 1rem;
+  background-color: #ec5242;
+}
+
+.imgblock img {
+  width: 20rem;
+  opacity: 0.4;
+}
+
+.imgtext {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  top: 35%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.imgtext h5,
+.imgtext p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: 'COCOGOOSE', sans-serif;
+}
+
 /* Footer */
 .footer p {
   text-align: left;
@@ -107,5 +143,10 @@ hr {
   .about .desktop {
     display: inline;
     text-decoration: none;
+  }
+
+  /* History */
+  .imgblock {
+    flex-direction: column;
   }
 }
