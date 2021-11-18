@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iqbal Day Poetry Festival</title>
+  <meta name="description" content="Portal Capstone">
+  <meta name="author" content="Humaira Zaman">
+  <meta name="keywords" content="html tutorial template">
+
+  <link rel="stylesheet" href="./styles.css?v=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/cocogoose">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="mobile" id="hamburger"><b>&#9776;</b></div>
+      <div class="bothnav">
+        <div class="social desktop">
+          <ul>
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-twitter"></a></li>
+            <li><select name="language" id="lang">
+                  <option value="eng" selected>English</option>
+                  <option value="urdu">Urdu</option>
+                  <option value="farsi">Farsi</option>
+                </select>
+              </li>
+            <li class="loginBtn">Login / Sign up</li>
+          </ul>
+        </div>
+        <div class="navbar hamburgerNav">
+          <a href="./index.html"><img class="navLink homepage logo desktop" src="./img/logo.png" alt="Logo"></a>
+          <ul>
+            <li><a class="otherpage" href="./about.html"><b>About</b></a></li>
+            <li><a class="navLink programpage" href="#programpage">Program</a></li>
+            <li><a class="navLink featuredpage" href="#featuredpage">Poets</a></li>
+            <li><a class="" href="./about.html#historypage">History</a></li>
+            <li class="mobile empty">_empty_</li>
+            <li class="mobile loginBtn">Log in/Sign up</li>
+            <li class="mobile empty">_empty_</li>
+            <li><a id="homelink" href="#homepage">Iqbal Day</a></li>
+            <li class="mobile empty">_empty_</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="home" id="homepage">
+      <h5>"Welcome, Poets All!"</h5>
+      <h1>ALLAMA IQBAL DAY<br>POETRY FESTIVAL<br>2021</h1>
+      <p>A joyful day celeberating a great man with the dream of Pakistan
+        and an independent state for the Muslims of the subcontinent.
+        His golden words had the power to encourage the people to fight
+        for their rights and take a step forward for freedom.</p>
+      <h3>2021.11.09 (TUE)</h3>
+      <h4>@ Allama Iqbal University, Lahore</h4>
+    </section>
+
+    <section class="program" id="programpage">
+      <h2>Main Program</h2>
+      <hr>
+      <div class="programcards">
+        <div class="card" id="intro">
+          <img src="./img/icons/conference-icon.png" alt="" 
+          class="cardicon" id="intropic">
+          <h5>Introduction</h5>
+          <p>Listen to the biography and accomplishments of M. Iqbal.</p>
+        </div>
+        <div class="card" id="recital">
+          <img src="./img/icons/PngItem_321195.png" alt="" 
+          class="cardicon" id="recitalpic">
+          <h5>Recital</h5>
+          <p>Hear the recital of selected verses from the collected works of M. Iqbal.</p>
+        </div>
+        <div class="card" id="debate">
+          <img src="./img/icons/connection1.png" alt="" 
+          class="cardicon" id="debatepic">
+          <h5>The Poets</h5>
+          <p>Meet the foremost poets of today as they recite selections of their own poetry.</p>
+        </div>
+        <div class="card" id="competition">
+          <img src="./img/icons/meet.png" alt="" 
+          class="cardicon" id="competitionpic">
+          <h5>Competition</h5>
+          <p>Watch all the best poets have a knockout poetry competition.</p>
+        </div>
+        <div class="card" id="finale">
+          <img src="./img/icons/certificate.png" alt="" 
+          class="cardicon" id="finalepic">
+          <h5>Finale</h5>
+          <p>Attend our grand finale, with prizes for the winning poet and much more.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured" id="featuredpage">
+      <h2>Featured Speakers</h2>
+      <hr>
+      <div class="allSpeakers">
+        <!-- Default featured speaker -->
+        <!-- <div class="speaker">
+          <div class="profilePic">
+            <img class="imgBack" src="/img/profiles/checker.png" alt="" class="back">
+            <img class="speakerImg" src="/img/profiles/3.jpg" alt="Speaker">
+          </div>
+          <div class="speakerDesc">
+            <h3 class="speakerName">Ahmed Sagheer Siddiqi</h3>
+            <h4 class="speakerTitle">20 Aug 1938 | Bahraich, Uttar pradesh</h4>
+            <hr class="smallDivider">
+            <p class="speakerSample">aanā zarā tafrīh rahegī<br>
+              ik mahfil-e-sadmāt kareñge</p>
+          </div>
+        </div> -->
+      </div>
+      <button type="button" class="mobile" id="more">MORE <span> &#x2304;</span></button>
+    </section>
+
+    <section class="formpage">
+      <div class="formbg"></div>
+      <div class="formWrap">
+        <img src="./img/logo.png" alt="logo">
+        <form class="signupForm" action="action_page.php" method="post">
+          <h3>Sign Up</h3>
+          <div class="formIn">
+            <label for="fullname"><b>Full Name</b></label>
+            <input type="text" placeholder="Full Name" name="uname" id="fullname" required>
+          </div>
+          <div class="formIn">
+            <label for="makepsw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="makepsw" required>
+          </div>
+          <button type="submit">Sign up</button>
+          <p>Click <a class="formSwitch" href="#">here</a> to log in.</p>
+        </form>
+        <form class="loginForm" action="action_page.php" method="post">
+          <h3>Log in</h3>
+          <div class="formIn">
+            <label for="uname"><b>UserName</b></label>
+            <input type="text" placeholder="User Name" name="uname" id="uname" required>
+          </div>
+          <div class="formIn">
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+          </div>
+          <button type="submit">Log in</button>
+          <p>Click <a class="formSwitch" href="#">here</a> to sign up.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img class="logo" src="./img/logo.png" alt="Logo">
+    <div class="textblock">
+      <div id="oneline">
+        <p>2021 Iqbal Day Poetry Festival.</p>
+        <p>Some Rights Reserved.</p>
+      </div>
+      <p class="desktop">Celeberating Pakistan's National Poet - November 9th - Allama Iqbal University, Lahore, Punjab
+      </p>
+      <p class="desktop">Licensed under Pakistan's National Department of Culture and Art.
+      </p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
