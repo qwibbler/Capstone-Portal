@@ -42,6 +42,8 @@ nav {
   z-index: 10;
   margin-top: 1rem;
   margin-left: 2rem;
+  width: 2.625rem;
+  text-align: center;
 }
 
 #hamburger:hover {
@@ -135,6 +137,7 @@ h3 {
 
 /* Program */
 .program {
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -163,7 +166,7 @@ h2 {
   align-items: center;
   justify-content: flex-start;
   margin: 0.5rem;
-  background-color: #d3d3d356;
+  background-color: #d3d3d331;
 }
 
 .card img {
@@ -178,6 +181,7 @@ h2 {
   font-size: 1rem;
   /* font-weight: ; */
   font-family: 'COCOGOOSE', sans-serif;
+  text-shadow: 0 0 1px black;
 }
 
 .card p {
@@ -523,7 +527,7 @@ footer .textblock {
 
   .programcards {
     display: grid;
-    grid-template: auto / repeat(auto-fit, 10rem);
+    grid-template: auto / repeat(auto-fit, 12rem);
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -534,7 +538,7 @@ footer .textblock {
     grid-template: 4rem 2rem auto / auto;
     justify-content: center;
     height: 100%;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
   }
 
   .card h5 { text-align: center; }
